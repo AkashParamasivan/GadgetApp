@@ -1,0 +1,17 @@
+<p>mobiles works!</p>
+<h1>{{welcome}}</h1>
+  <table class="table" border="1">
+      <tr>
+          <th>ModelName</th>
+          <th>BrandName</th>
+          <th>Price</th>
+          <th>Specification</th>
+      </tr>
+      <tr *ngFor="let mob of ArrMobile |Mobilefilter:Searchtext ">
+          <td>{{mob.ModelName}}</td>
+          <td>{{mob.BrandName}}</td>
+          <td>{{mob.Price}}</td>
+          <td>{{mob.Specification}}</td>
+      </tr>
+  </table>
+  <input type="number" placeholder="Type Amount" [(ngModel)]="Searchtext" />

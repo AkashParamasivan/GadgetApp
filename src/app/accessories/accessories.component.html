@@ -1,0 +1,17 @@
+<p>accessories works!</p>
+<h1>{{welcome}}</h1>
+  <table class="table" border="1">
+      <tr>
+          <th>s.no</th>
+          <th>BrandName</th>
+          <th>AccessoriesName</th>
+          <th>Price</th>
+      </tr>
+      <tr *ngFor="let acc of ArrAccess; let i=index">
+          <td>{{i+1}}</td>
+          <td>{{acc.BrandName}}</td>
+          <td>{{acc.AccessoriesName}}</td>
+          <td>{{acc.Price}}</td>
+      </tr>
+  </table>
+

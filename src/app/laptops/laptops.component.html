@@ -1,0 +1,21 @@
+<p>laptops works!</p>
+<h1>{{welcome}}</h1>
+  <table class="table" border="1">
+      <tr>
+       
+          <th>ModelName</th>
+          <th>BrandName</th>
+          <th>Price</th>
+          <th>Specification</th>
+      </tr>
+      <tr *ngFor="let lap of ArrLaptop  |LaptopFilter:Searchtext ">
+          <td>{{lap.ModelName}}</td>
+          <td>{{lap.BrandName}}</td>
+          <td>{{lap.Price}}</td>
+          <td>{{lap.Specification}}</td>
+          
+      </tr>
+  </table>
+  
+  <input type="text" placeholder="Type BrandName" [(ngModel)]="Searchtext" />
+
